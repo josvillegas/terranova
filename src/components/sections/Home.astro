@@ -1,3 +1,9 @@
+---
+import TablerLinkedin from "../../icons/Tabler-Linkedin.astro";
+import TablerInstagram from "../../icons/Tabler-Instagram.astro";
+import TablerMail from "../../icons/Tabler-mail.astro";
+---
+
 <main class="px-12 py-10">
   <div
     class="flex flex-col-reverse md:flex-row items-center justify-center gap-10"
@@ -9,16 +15,38 @@
         a brindar soluciones integrales en proyectos de infraestructura, obras
         civiles y gestión de proyectos
       </p>
-      <div>
+      <div class="flex gap-3">
         <a
-          href="nosotros"
-          class="bg-[#114C5F] text-white px-4 py-2 rounded-lg text-center hover:bg-[#0E3D4C]"
-          >ver mas</a
+          class="bg-transparent p-1 rounded-full border border-[#033D49]"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Linkedin de Terranova Sac"
         >
+          <TablerLinkedin class="text-[#033D49] size-6" />
+        </a>
+        <a
+          class="bg-transparent p-1 rounded-full border border-[#033D49]"
+          href=""
+          title="Instagram de Terranova Sac"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TablerInstagram class="text-[#033D49] size-6" />
+        </a>
+        <a
+          class="bg-transparent p-1 rounded-full border border-[#033D49]"
+          href="mailto:prueba@gmail.com"
+          title="Enviar un correo electronico a prueb@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TablerMail class="text-[#033D49] size-6" />
+        </a>
       </div>
     </div>
     <img
-      class="size-64 md:size-80 lg:size-96 -rotate-3"
+      class="size-64 md:size-72 lg:size-80 -rotate-3"
       src="construcion.webp"
       alt="constructora"
       width="256"
