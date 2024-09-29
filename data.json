@@ -1,0 +1,26 @@
+{
+  "basics": {
+    "empleados": [
+      {
+        "img": "('doctor.webp')",
+        "name": "Delsy Lozada",
+        "profesion": "Gerente General"
+      },
+      {
+        "img": "('doctor.webp')",
+        "name": "Nombre Apellido",
+        "profesion": "Gerente de Operaciones"
+      },
+      {
+        "img": "('doctor.webp')",
+        "name": "Nombre Apellido",
+        "profesion": "Gerente de Financiamiento"
+      },
+      {
+        "img": "('doctor.webp')",
+        "name": "Nombre Apellido",
+        "profesion": "Gerente Comercial"
+      }
+    ]
+  }
+}
