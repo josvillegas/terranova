@@ -1,0 +1,40 @@
+<div class="flex items-center justify-center mt-12 bg-transparent">
+  <header class="fixed flex items-center z-10">
+    <nav
+      class="flex px-3 text-sm font-medium rounded-full text-black justify-center items-center"
+    >
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        href="/">Inicio</a
+      >
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        href="#nosotros">Nosotros</a
+      >
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        href="#servicios">Servicios</a
+      >
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        href="#personal">Personal</a
+      >
+      <a
+        class="relative block px-2 py-2 transition hover:text-gray-900 hover:underline"
+        href="#proyectos">Proyectos</a
+      >
+    </nav>
+  </header>
+</div>
+<style>
+  nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur bg-black/40 ring-white/10 text-white no-underline;
+    }
+  }
+</style>

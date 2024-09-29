@@ -1,0 +1,60 @@
+---
+import { basics } from "../../../data.json";
+const { empleados } = basics;
+---
+
+<section id="personal" class="flex flex-col items-center m-10 gap-8">
+  <h2 class="text-center text-3xl font-bold text-[#033D49]">Personal</h2>
+  <p class="text-center max-w-[600px] m-auto">
+    Conozca a nuestro equipo de especialistas y reciba la mejor atención.
+  </p>
+  <div class="flex justify-center py-10">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-10 px-10"
+    >
+      {
+        empleados.map(({ img, name, profesion }) => {
+          return (
+            <div class="flex flex-col gap-y-3 items-center">
+              <a
+                class="group w-48 h-48 rounded-full flex items-center justify-center"
+                href="#"
+                title="doctor"
+              >
+                <h4 class="group-hover:text-white group-hover:block hidden font-bold text-center">
+                  ver perfil
+                </h4>
+              </a>
+              <div>
+                <h3 class="text-base font-semibold text-black text-center">
+                  {name}
+                </h3>
+                <h4 class="text-lg font-bold text-[#045C6D] text-center">
+                  {profesion}
+                </h4>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+
+  <div>
+    <a
+      class="bg-[#114C5F] py-2 px-4 rounded-lg text-white hover-[#0E3D4C]"
+      href="medicos">ver staff</a
+    >
+  </div>
+</section>
+<style>
+  .group {
+    background-image: url("doctor.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .group:hover {
+    background: #045c6d;
+  }
+</style>
